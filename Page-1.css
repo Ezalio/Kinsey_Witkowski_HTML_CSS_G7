@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+
+
+/* HEADER */
+header {
+  background-color: black;
+  top: 0px;
+  position: sticky;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+header ul li a {
+  color: white;
+  line-height: 1;
+  display: inline-block;
+  font-size: 18px;
+  padding: 18px 24px;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+
+header ul li a:hover {
+  background: white;
+  color: black;
+}
+
+
+/* TEXT ELEMENTS */
+
+h1, h2, h3, p {
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 5vw;
+  text-align: left;
+  margin-top: 15px;
+  font-weight: bolder;
+  color: black;
+}
+
+.quote {
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 35%;
+}
+
+h3 {
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+p {
+  font-family: "Calibri";
+  margin: 15px;
+  font-size: large;
+}
+
+h5 {  /* h5 is used to center links :[ */
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-size: medium;
+  text-align: center;
+}
+
+
+/* LINKS */
+
+.title-link {
+  color: black;
+  text-decoration: none;
+}
+
+.regular-link {
+  color: white;
+  background-color: rgb(18, 18, 18);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.regular-link:hover {
+  color: black;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+.title-link:hover {
+  color: gray;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+.article {
+  display: flex;
+  border: solid black;
+  border-width: 5px;
+  background-color: lightsteelblue;
+  margin-top: 15px;
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+}
+
+/* FIRST DIV */
+
+.big-div1 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin: 50px 35px 75px 35px;
+
+}
+
+.article-block {
+  border: solid black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+.block-text {
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  height: 50px;
+}
+
+
+
+
+/* SECOND DIV */
+
+.big-div2 {
+  display: grid;
+  grid-template-columns: 55% 25% 20%;
+  margin: 50px 35px 75px 35px;
+}
+
+
+.div2-div1 {
+  background-color: lightblue;
+
+}
+
+.div2-div2 {
+  background-color: black;
+  color: white;
+}
+
+
+/* THIRD DIV */
+
+.big-div3 {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  margin: 50px 35px 75px 35px;
+  background-color: lightpink;
+  
+}
+
+table {
+  width: 95%;
+  text-align: center;
+  border: 2px solid palevioletred;
+  margin: 5px;
+}
+
+tr, td {
+  border: 1px solid palevioletred
+}
+
+th {
+  background-color: lightcoral;
+}
+
+
+
+/* FOR SMALLER SCREENS */
+@media screen  and (max-width: 1000px) {
+
+  .big-div1, .big-div2, .big-div3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .quote {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+}
